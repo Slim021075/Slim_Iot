@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>SLIM-IOT</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.2/mqttws31.min.js" type="text/javascript"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      
+   </head>
+   <body>
+      <div class="wrapper">
+         <h1 id="Main_heading"> <b>TP_IOT_SLIM BEY</b></h1><br>        
+         <form id="connection-information-form">
+            <fieldset>
+               <legend>Hostname or IP Address</legend>
+               <span>Broker Url :</span>
+               <input id="host" type="text" name="host"  value="79dcb8a2f444469288d8b27d602c2a68.s1.eu.hivemq.cloud">
+               
+               <span>Username :</span>
+               <input id="username" type="text" name="Username"  value="Slim BEY"><br>
+               <span>Password :</span>
+               <input id="password" type="password" name="password"  value="Hive@98200226"><br>          
+               
+               <input type="button" onclick="startConnect()"  value="Connect">
+               <input type="button"  onclick="startDisconnect()" value="Disconnect"> <br>               
+               <div id="Mess_connect"></div>
+            </fieldset><br><br>
+
+            <fieldset>
+               <legend>Subscription topic</legend>
+               
+               <input id="topic_tem" type="checkbox" value="sensor/DHT11/temperature" onclick="sub_topic_tem()" >
+               <label for="topic_tem">Tempurature topic</label>
+               <input id="topic_hum" type="checkbox" value="sensor/DHT11/humidity" onclick="sub_topic_hum()" >
+               <label for="topic_hum">Humidity topic</label> 
+               
+               <div class="container">
+                  
+                  <canvas id="temperatureHumidityChart"  ></canvas>
+              </div>             
+               
+               
+               <div class="messages">
+                  <div id="Mess_t"></div>
+                  <div id="Mess_h"></div>
+               </div>
+               
+              
+               
+            </fieldset> <br> <br>
+            <fieldset>
+               <legend>Publish Topic and Message</legend>  
+               <span>Topic :</span>                        
+               <input id="topic_p" type="text" name="topic_p" value="Allume_led"><br>               
+               <input id="Led_on" type="radio" value="on" name="Led" >
+               <label for="Led_on">Led_on</label>
+               <input checked id="Led_off" type="radio" value="off" name="Led">
+               <label for="Led_off">Led_off</label>
+               <input id="button" type="button" onclick="publishMessage()" value="Publish">              
+               <div id="Mess_pub" type="text"></div>
+               
+            </fieldset>
+         </form>
+         
+              
+         
+      
+      </div>
+   </body>
+   <script src="demo.js" type="text/javascript"></script>
+</html>

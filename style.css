@@ -1,0 +1,210 @@
+
+
+body {
+    font-family: "Open Sans", sans-serif;
+    
+}
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    padding-right: 10px;
+    padding-left: 10px;     
+
+}
+b{
+    color: rgb(0, 112, 192) ;
+}
+span,label{
+    color: green;
+}
+label{
+    margin-left: 0;
+    padding:1px ;
+    text-align: left;
+}
+input {
+    width : 150px;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    border-radius: 2mm;
+}
+input[type=text] {
+    width:90%;
+    padding: 12px 12px;
+    height: 10px;    
+    margin: 8px 0;
+   border-color:grey;
+   border: 2px solid;
+}
+input[type=password] {
+    width:90%;
+    padding: 12px 12px;
+    height: 10px;
+    margin: 4px 2px;
+    border-color:grey;
+    border: 2px solid;
+}
+input[type=button] {
+    background-color: lightblue;
+    border: solid 1px;
+    border-color: grey;
+    color: black;    
+    text-decoration: none;
+    font-weight: bold;
+    height: 20px;
+    margin: 4px 2px;
+    margin-left: 85px;
+    cursor: pointer;
+    border-radius: 1mm;
+}
+
+input[type=checkbox] {       
+    color: black;
+    border-color: rgb(0, 112, 192);
+    width: 20px;
+    height: 20px;    
+    margin-left: 40px ;
+    
+    padding:1px ;
+    text-decoration: none;
+    font-weight: bold;    
+    cursor: pointer;
+}
+
+  input[type="radio"] {     
+   
+    width: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    height: 20px;
+    margin-left: 40px ;
+    padding:1px ;    
+    cursor: pointer;
+    
+}
+
+
+input[type=text]:focus {
+    background-color: lightblue;
+}
+input[type=password]:focus {
+    background-color: lightblue;
+}
+input[type=button]:hover {
+    background-color: hsl(93, 73%, 51%);    
+}
+
+
+#Main_heading{
+    text-align: center;
+}
+
+#Mess_connect {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 12px;
+    width:96%;
+    display: inline-block;
+    border:2px solid ;
+    max-height: 40px;
+    min-height: 40px;  
+    overflow-y: scroll;
+    color: rgb(106, 154, 243);
+    border-color:grey ;
+    border-radius: 1.5mm;
+
+}
+.messages{
+   
+    margin-left: 1px;
+    margin-right: 1px;
+    
+   
+    padding-right: 10px;
+    padding-left: 5px;
+    
+}
+#Mess_t {
+    width: 48%;
+    margin-top: 5px;
+    margin-bottom: 5px; 
+    margin-left: 1px;   
+    padding:10px; 
+    padding-left: 5px;   
+    border:2px solid;
+    max-height: 90px;
+    min-height: 90px;
+    overflow: scroll;
+    color: red;
+    border-color:grey ;
+    border-radius: 1.5mm;
+}
+#Mess_h {
+    width: 48%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 1px;   
+    padding: 10px; 
+    padding-left: 5px;    
+    border:2px solid ;
+    max-height: 90px;
+    min-height: 90px;
+    overflow: scroll;
+    color:rgb(0, 112, 192);
+    border-color:grey ;
+    border-radius: 1.5mm;
+}
+#Mess_pub {
+    margin-top: 12px;
+    margin-bottom: 12px;   
+    padding: 12px;
+    color:  rgb(106, 154, 243);    
+    border:2px solid ;
+    border-color:grey ;
+    max-height: 40px;
+    min-height: 40px;
+    overflow: scroll;
+    border-radius: 1.5mm;
+}
+legend{
+    border:2px solid ;
+   border-radius: 1.5mm;
+    color:rgb(0, 112, 192) ;
+    border-color:rgb(0, 112, 192) ;
+}
+fieldset{
+    border:2px solid ;  
+    border-radius: 2mm;
+    border-color:rgb(0, 112, 192) ;
+}
+
+#button{
+    margin-left: 80px;
+}
+
+.container {
+    float: right;
+    text-align: center;
+    width: 48%;
+    max-height: 250px;
+    min-height: 250px;
+    margin-top: 5px;
+    margin-bottom: 5px; 
+    margin-right: 5px;
+}
+
+
+
+canvas {
+   padding: 0px;
+    float: right;
+    border: 2px solid grey;
+}
+
+
+
+
