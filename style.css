@@ -1,210 +1,107 @@
 
-
 body {
     font-family: "Open Sans", sans-serif;
-    
+    margin: 0;
+    padding: 0;
 }
+
 .wrapper {
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
-    padding-right: 10px;
-    padding-left: 10px;     
+    width: 100%;
+    padding-right: 5px;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+#Main_heading {
+    text-align: center;   /* Centre le texte horizontalement */
+    margin-top: 20px;      /* Vous pouvez ajuster la marge supérieure si nécessaire */
+    margin-bottom: 10px;   /* Vous pouvez ajuster la marge inférieure si nécessaire */
+    font-size: 2em;        /* Vous pouvez aussi ajuster la taille du texte */
+    color: rgb(0, 112, 192); /* Couleur de votre titre, au choix */
+}
+b {
+    color: rgb(0, 112, 192);
+}
 
-}
-b{
-    color: rgb(0, 112, 192) ;
-}
-span,label{
+span, label {
     color: green;
 }
-label{
+
+label {
     margin-left: 0;
-    padding:1px ;
+    padding: 0;
     text-align: left;
 }
+
+/* Formulaires de saisie */
 input {
-    width : 150px;
     margin: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    
     border-radius: 2mm;
 }
-input[type=text] {
-    width:90%;
-    padding: 12px 12px;
-    height: 10px;    
+
+input[type="text"], input[type="password"] {
+    width: 85%;
+    padding: 5px 5px;
+    height: 2em;
     margin: 8px 0;
-   border-color:grey;
-   border: 2px solid;
-}
-input[type=password] {
-    width:90%;
-    padding: 12px 12px;
-    height: 10px;
-    margin: 4px 2px;
-    border-color:grey;
+    border-color: grey;
     border: 2px solid;
 }
-input[type=button] {
+
+input[type="button"] {
     background-color: lightblue;
     border: solid 1px;
     border-color: grey;
-    color: black;    
-    text-decoration: none;
+    color: black;
     font-weight: bold;
-    height: 20px;
+    height: 2em;
     margin: 4px 2px;
-    margin-left: 85px;
+    width: 8em;
     cursor: pointer;
     border-radius: 1mm;
 }
-
-input[type=checkbox] {       
-    color: black;
-    border-color: rgb(0, 112, 192);
-    width: 20px;
-    height: 20px;    
-    margin-left: 40px ;
-    
-    padding:1px ;
-    text-decoration: none;
-    font-weight: bold;    
-    cursor: pointer;
-}
-
-  input[type="radio"] {     
-   
-    width: 20px;
-    text-decoration: none;
-    font-weight: bold;
-    height: 20px;
-    margin-left: 40px ;
-    padding:1px ;    
-    cursor: pointer;
-    
-}
-
-
-input[type=text]:focus {
-    background-color: lightblue;
-}
-input[type=password]:focus {
-    background-color: lightblue;
-}
-input[type=button]:hover {
-    background-color: hsl(93, 73%, 51%);    
-}
-
-
-#Main_heading{
-    text-align: center;
-}
-
-#Mess_connect {
-    margin-top: 12px;
-    margin-bottom: 12px;
-    padding: 12px;
-    width:96%;
-    display: inline-block;
-    border:2px solid ;
-    max-height: 40px;
-    min-height: 40px;  
-    overflow-y: scroll;
-    color: rgb(106, 154, 243);
-    border-color:grey ;
+#Mess_connect, #Mess_t, #Mess_h, #Mess_pub {
+    width: 100%;   /* Utilisation de toute la largeur disponible dans le fieldset */
+    box-sizing: border-box;  /* Inclure les bordures et les paddings dans la largeur totale */
+    margin: 5px 0;   /* Espacement entre les éléments de message */
+    padding: 10px;   /* Espace intérieur */
+    border: 2px solid grey;
     border-radius: 1.5mm;
+    overflow-y: auto; /* Permet de faire défiler le texte si nécessaire */
+}
 
-}
-.messages{
-   
-    margin-left: 1px;
-    margin-right: 1px;
-    
-   
-    padding-right: 10px;
-    padding-left: 5px;
-    
-}
+/* Messages spécifiques */
 #Mess_t {
-    width: 48%;
-    margin-top: 5px;
-    margin-bottom: 5px; 
-    margin-left: 1px;   
-    padding:10px; 
-    padding-left: 5px;   
-    border:2px solid;
-    max-height: 90px;
-    min-height: 90px;
-    overflow: scroll;
     color: red;
-    border-color:grey ;
-    border-radius: 1.5mm;
 }
+
 #Mess_h {
-    width: 48%;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 1px;   
-    padding: 10px; 
-    padding-left: 5px;    
-    border:2px solid ;
-    max-height: 90px;
-    min-height: 90px;
-    overflow: scroll;
-    color:rgb(0, 112, 192);
-    border-color:grey ;
-    border-radius: 1.5mm;
+    color: rgb(0, 112, 192);
 }
-#Mess_pub {
-    margin-top: 12px;
-    margin-bottom: 12px;   
-    padding: 12px;
-    color:  rgb(106, 154, 243);    
-    border:2px solid ;
-    border-color:grey ;
-    max-height: 40px;
-    min-height: 40px;
-    overflow: scroll;
-    border-radius: 1.5mm;
-}
+
 legend{
     border:2px solid ;
    border-radius: 1.5mm;
     color:rgb(0, 112, 192) ;
     border-color:rgb(0, 112, 192) ;
 }
-fieldset{
-    border:2px solid ;  
+/* Conteneur du fieldset */
+fieldset {
+    width: 100%;   /* Assurez-vous que le fieldset occupe toute la largeur disponible */
+    box-sizing: border-box;
+    padding-left: 5px;
+    height: auto;  /* Hauteur auto pour s'adapter au contenu */
+    margin-bottom: 20px;  /* Espacement inférieur pour éviter le chevauchement */
+    border: 2px solid rgb(0, 112, 192);
     border-radius: 2mm;
-    border-color:rgb(0, 112, 192) ;
 }
 
-#button{
-    margin-left: 80px;
+/* Suppression du margin négatif qui peut forcer un débordement */
+fieldset > .container {
+    margin: 0;
+    padding: 0;
 }
-
-.container {
-    float: right;
-    text-align: center;
-    width: 48%;
-    max-height: 250px;
-    min-height: 250px;
-    margin-top: 5px;
-    margin-bottom: 5px; 
-    margin-right: 5px;
-}
-
-
-
-canvas {
-   padding: 0px;
-    float: right;
-    border: 2px solid grey;
-}
-
-
-
-

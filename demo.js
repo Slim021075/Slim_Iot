@@ -172,7 +172,10 @@ scales: {
 }
 // Création du graphique
  const ctx = document.getElementById('temperatureHumidityChart').getContext('2d');
+ 
+
 const temperatureHumidityChart = new Chart(ctx, config); 
+
 
 
 
